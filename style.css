@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+section {
+    position: relative;
+    padding-bottom: 3.5rem;
+}
+
+.container {
+    max-width: 1280px;
+    min-height: 1vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .logo {
+    width: 230px;
+    padding: 50px 0 60px;
+}
+
+.container .logo img {
+    width: 230px;
+}
+
+.container .main {
+    display: flex;
+    justify-content: center;   
+    position: relative;
+}
+
+.container .main .illustration {
+    width: 55%;
+}
+
+.container .main .illustration img {
+    max-width: 100%;
+}
+
+.container .main .content {
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.container .main .content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+.container .main .content p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.container .main .content .button {
+    padding: 15px 54px;
+    display: inline-block;
+    background-color: #F8F9FA;
+    border-radius: 900px;
+    font-size: 15px;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container .main .content .button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #FFF;
+}
+
+.container .icon {
+    position: absolute;
+    right: 0;
+}
+
+.container .icon a {
+    padding: 8px;
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.container .icon a:hover {
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
+
+footer {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    height: 3.5rem;
+    text-align: center;
+}
+
+footer .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer .attribution a { 
+    color: #FFF;
+    font-weight: 600;
+}
+
+footer .attribution a:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .logo {
+        padding: 30px 0;
+    }
+
+    .container .logo img {
+        width: 150px;
+    }
+
+    .container .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+    
+    .container .main .illustration {
+        width: 100%;
+    }
+    
+    .container .main .illustration img {
+        max-width: 100%;
+    }
+    
+    .container .main .content {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .main .content h1 {
+        font-size: 24px;
+    }
+    
+    .container .main .content p {
+        font-size: 16px;
+    }
+
+    .container .main .content .button {
+        padding: 10px 60px;
+        font-size: 14px;
+    }
+
+    .container .icon {
+        text-align: center;
+        margin: 50px 0;
+        position: relative;
+    }
+
+    .container .icon a {
+        font-size: 14px;
+        padding: 6px;
+        margin: 0 5px;
+    }
+
+    footer {
+        bottom: 0;
+    }
+}
